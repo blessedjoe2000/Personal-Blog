@@ -1,92 +1,369 @@
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
 body{
-    width: 100%;
+    display: grid;
+    grid-template-areas: "header  header"
+                            "main aside"
+                            "footer footer";
+
+    grid-template-columns: 2.5fr 1fr;
+    
 }
 header{
-    background-color: skyblue;
-    height: 5rem;
-    color: snow;
-
+    grid-area: header;
+    background-color: #183153;
+    color: #ffffff;
     
 }
 
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem;
 }
 
-nav > ul >li{
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3rem;
+    
+}
+
+.btn{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    background-color: rgb(29,151,117);
+    color: #ffffff;    
+}
+
+.btn:hover{
+    background-color: rgb(99,230,190);
+}
+
+.list{
     list-style: none;
     display: inline-block;
     padding: 1rem;
+    color: #ffffff;
 }
+
+.list:hover{
+    color: rgb(99,230,190);
+}
+
+.blogers-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem;
+}
+
+.blogers-info> h1{
+    font-size: 3rem;
+    font-family: "Noticia Text", "Source Sans Pro" sans-serif;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+.blogers-info> h1:hover{
+    color: rgb(99,230,190);
+}
+
 main{
-    
+    grid-area: main;
+    padding: 2rem;
+   
+}
+
+main> h1 {
+    margin-bottom: 1rem;
+    line-height: 1.8rem;
+    font-size: 2.5rem;
+}
+
+.cards{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
 }
 
 .card{
-    width: 70%;
-    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
 }
 
-.card > section :nth-child(1){
-    padding-right: 1rem;
+.card> figure{
+    margin: 0 0;
+    margin-bottom: 0.5rem;
 }
 
-.card > section{
-    width: 45%;
-    display: inline-block;
-    /* padding: 1rem; */
-}
-
-section> figure{
-    margin: 0;
-}
-
-section> figure > img{
+.card> figure > img{
     width: 100%;
-    border-radius: 5%;
+    border-radius: 1rem;
 }
 
+.card> p{
+    width: 95%;
+}
 
+.card> .author{
+    display: flex;
+    padding-top: 0.5rem;
 
-section> img{
-    width: 10%;
+}
+
+.card> .author> p {
+    font-size: 0.8rem;
+    padding: 0.8rem 0 0 0.4rem;
+    color: rgba(51, 51, 51, 0.65);
+}
+
+.card> .author> img{
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
 }
 
-.contact_me{
-
+aside{
+    grid-area: aside;
+    padding: 2rem;
 }
 
-.contact_me> h4{
+aside> article{
+    border: 1px solid #0C1F3F;
+    padding: 2rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+aside> article> p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+aside> article> ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.categories> dl> section> a{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 0.5rem;
 }
 
-.contact_me> h2{
-    display: flex;
-    justify-content: center;
+dd{
+    margin: 0;
 }
-.contact_me> section{
+
+.recent-post> ul> li> img{
+    width: 4rem;
+    height: 3rem;
+    border-radius: 10%;
+}
+
+.recent-post> ul> li> section{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    line-height: normal;
+}
+
+.recent-post> ul> li> section> time{
+    font-weight: bold;;
+}
+
+.recent-post> ul> li{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tags> ul{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer> .contact_me{
     background-color: skyblue;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 3rem;
 }
 
-.contact_me> section>article{
-    display: inline-block;
+footer> .contact_me> h2{
+    font-family: "Noticia Text", "Source Sans Pro" sans-serif;
+    margin: 1rem 0 4rem 0;
+    font-size: 2rem;
+}
+
+footer> .contact_me> .contact-info{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.contact-btn{
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.55);
+    color: #0C1F3F;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+ .contact-icon{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+}
+
+.contact-icon:hover{
+    fill: rgb(99,230,190);
 }
 
 footer{
-    color: whitesmoke;
-    background-color: skyblue;
-    padding-top: 2rem;
+    grid-area: footer;
+    background-color: #183153;
+    color: #ffffff;
+
+}
+footer> .footer-info{
+    display: flex;
+    padding: 5rem;
+    gap: 2rem;
+    line-height: 1.8rem;
 }
 
-footer> article {
+.social-media-link{
+    width: 40%;
+}
+
+.social-media-link> p{
+    padding: 1.5rem 0 ;
+}
+
+.social-media{
+    width: 2rem;
+    height: 2rem;
+    fill: #ffffff;
+}
+
+#facebook:hover{
+    fill: rgb(47,105,184);
+}
+
+#instagram:hover{
+    fill: rgb(236,38,143);
+}
+
+#twitter:hover{
+    fill: rgb(0,164,217);
+}
+
+#whatsapp:hover{
+    fill: rgb(75,202,90);
+}
+
+#linkedIn:hover{
+    fill: rgb(47,105,184);
+}
+
+.footer-list> ul {
+    margin: 0;
+    list-style: none ;
+}
+
+.footer-list> ul> p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.footer-list> ul> p:hover{
+    color: rgb(99,230,190);
+}
+
+.footer-list> ul> li{
+    padding: 0.5rem;
+}
+
+#latest-blog{
+    width: 20%;
+}
+
+#trendy{
+    width: 20%;
+}
+
+#most-visited{
+    width: 20%;
+}
+
+#footer_copyright {
     background-color: black;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+    text-align: center;
+    padding: 2rem;   
+}
+
+#footer_copyright:hover{
+    color: rgb(99,230,190);
+}
+
+/**media quary for table*/
+
+@media(min-width: 365px) and (max-width: 750px) {
+    body {
+        grid-template-areas: "header"
+                            "main"
+                            "aside"
+                            "footer";
+    }
+}
+
+
+/**media query **/
+@media(max-width: 364px) {
+    body {
+        grid-template-areas: "header"
+                            "main"
+                            "aside"
+                            "footer";
+    }
+
+    main .cards {
+        grid-template-columns: 1fr;
+    }
+
+    footer> .contact_me> .contact-info{
+        flex-direction: column;
+    }
     
+    footer> .footer-info{
+        flex-direction: column;
+    }
 }
