@@ -63,7 +63,7 @@ main> h1{
 }
 
 .author-section> ul{
-    padding-left: 0;
+    padding-left: 1rem;
     color: #112A52;
 }
 
