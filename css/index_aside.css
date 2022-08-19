@@ -1,0 +1,68 @@
+.author> img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+aside{
+    grid-area: aside;
+    padding: 2rem;
+}
+
+aside> article{
+    border: 1px solid #0C1F3F;
+    padding: 2rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+aside> article> p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+aside> article> ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.categories> dl> section> a{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 0.5rem;
+}
+
+dd{
+    margin: 0;
+}
+
+.recent-post> ul> li> img{
+    width: 4rem;
+    height: 3rem;
+    border-radius: 10%;
+}
+
+.recent-post> ul> li> section{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    line-height: normal;
+}
+
+.recent-post> ul> li> section> time{
+    font-weight: bold;;
+}
+
+.recent-post> ul> li{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tags> ul{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}

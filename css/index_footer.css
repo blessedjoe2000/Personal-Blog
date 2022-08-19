@@ -1,0 +1,129 @@
+footer> .contact_me{
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 3rem;
+}
+
+footer> .contact_me> h2{
+    font-family: "Noticia Text", "Source Sans Pro" sans-serif;
+    margin: 1rem 0 4rem 0;
+    font-size: 2rem;
+}
+
+footer> .contact_me> .contact-info{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.contact-btn{
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.55);
+    color: #0C1F3F;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+
+.contact-icon{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+}
+
+.contact-icon:hover{
+    fill: rgb(99,230,190);
+}
+
+footer{
+    grid-area: footer;
+    background-color: #183153;
+    color: #ffffff;
+
+}
+footer> .footer-info{
+    display: flex;
+    padding: 5rem;
+    gap: 2rem;
+    line-height: 1.8rem;
+}
+
+.social-media-link{
+    width: 40%;
+}
+
+.social-media-link> p{
+    padding: 1.5rem 0 ;
+}
+
+.social-media{
+    width: 2rem;
+    height: 2rem;
+    fill: #ffffff;
+}
+
+#facebook:hover{
+    fill: rgb(47,105,184);
+}
+
+#instagram:hover{
+    fill: rgb(236,38,143);
+}
+
+#twitter:hover{
+    fill: rgb(0,164,217);
+}
+
+#whatsapp:hover{
+    fill: rgb(75,202,90);
+}
+
+#linkedIn:hover{
+    fill: rgb(47,105,184);
+}
+
+.footer-list> ul {
+    margin: 0;
+    list-style: none ;
+}
+
+.footer-list> ul> p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.footer-list> ul> p:hover{
+    color: rgb(99,230,190);
+}
+
+.footer-list> ul> li{
+    padding: 0.5rem;
+}
+
+#latest-blog{
+    width: 20%;
+}
+
+#trendy{
+    width: 20%;
+}
+
+#most-visited{
+    width: 20%;
+}
+
+#footer_copyright {
+    background-color: black;
+    text-align: center;
+    padding: 2rem;   
+}
+
+#footer_copyright:hover{
+    color: rgb(99,230,190);
+}
