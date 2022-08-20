@@ -122,7 +122,7 @@ main> h1{
     margin: 3rem 0 5rem 0;
 }
 
-@media(max-width: 364px){
+@media(max-width: 480px){
     .tag-social-media{
         flex-direction: column;
     }

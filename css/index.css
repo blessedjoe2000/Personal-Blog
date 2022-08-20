@@ -102,7 +102,7 @@ nav{
 
 /**media quary for table*/
 
-@media(min-width: 365px) and (max-width: 750px) {
+@media(min-width: 481px) and (max-width: 768px) {
     body {
         grid-template-areas: "header"
                             "main"
@@ -113,7 +113,7 @@ nav{
 
 
 /**media query **/
-@media(max-width: 364px) {
+@media(max-width: 480px) {
     body {
         grid-template-areas: "header"
                             "main"
