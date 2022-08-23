@@ -63,8 +63,15 @@ nav{
     height: 2rem;
     border-radius: 2rem;
     font-size: 0.8rem;
-    background-color: rgb(29,151,117);
-    color: #ffffff;    
+    background-color: rgb(29,151,117);    
+}
+
+.btn-link{
+    color: #ffffff;
+}
+
+.btn-link:hover{
+    color: white;
 }
 
 .btn:hover{
@@ -75,10 +82,13 @@ nav{
     list-style: none;
     display: inline-block;
     padding: 1rem;
+}
+
+.menu-link{
     color: #ffffff;
 }
 
-.list:hover{
+.menu-link:hover{
     color: rgb(99,230,190);
 }
 
